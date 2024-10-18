@@ -14,6 +14,9 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
 using System.Xml.Serialization;
+using System.Net.Http;
+using System.Runtime.InteropServices;
+using System.Net;
 
 namespace OW_Scoreboard_Tool
 {
@@ -24,6 +27,9 @@ namespace OW_Scoreboard_Tool
         string xmlVersion = "0.4";
         const int Bytes_TO_READ = sizeof(Int64);
         Series Match1 = new Series();
+        private bool isInitializing = true;
+        private bool isListeningForKey = false;
+
 
         List<Replay> Replays = new List<Replay>();
         BindingList<Team> BracketTeams = new BindingList<Team>();
@@ -148,6 +154,11 @@ namespace OW_Scoreboard_Tool
         /// <param name="e"></param>
         private void Form1_Load(object sender, EventArgs e)
         {
+            StartHttpServer();
+            isInitializing = false;
+            RegisterHotkeys();
+
+
             loadText(m1MutualInfo, "Match1", "DivisionNumber");
 
             loadScore(m1t1Score, "Match1", "t1Score");
@@ -310,9 +321,428 @@ namespace OW_Scoreboard_Tool
 
             updateReplayPage();
             updateList();
+         
         }
-        
+
         #endregion
+
+        #region HTTPServer
+        private HttpListener httpListener;
+
+        public void StartHttpServer()
+        {
+            httpListener = new HttpListener();
+            httpListener.Prefixes.Add("http://localhost:8080/"); // Set your desired port and URL
+            httpListener.Start();
+            Console.WriteLine("HTTP Server started. Listening for requests...");
+
+            httpListener.BeginGetContext(OnRequestReceived, httpListener);
+        }
+
+        private void OnRequestReceived(IAsyncResult result)
+        {
+            if (httpListener == null || !httpListener.IsListening) return;
+
+            var context = httpListener.EndGetContext(result);
+            var request = context.Request;
+            var response = context.Response;
+
+            string responseString = "OK";
+
+            // Check for /trigger endpoint
+            if (request.Url.AbsolutePath == "/trigger")
+            {
+                Console.WriteLine("Triggered.. request...", request);
+                string action = request.QueryString["action"];
+                Console.WriteLine("Triggered.. but...", action);
+
+                if (!string.IsNullOrEmpty(action))
+                {
+                    HandleAction(action);
+                    responseString = $"Action '{action}' triggered!";
+                }
+                else
+                {
+                    responseString = "No action specified.";
+                }
+            }
+            // Check for /set endpoint to set the hero image
+            else if (request.Url.AbsolutePath == "/set")
+            {
+                Console.WriteLine("Set hero image request...", request);
+                string teamSide = request.QueryString["teamSide"];
+                string imageUrl = request.QueryString["imageUrl"];
+
+                if (!string.IsNullOrEmpty(imageUrl))
+                {
+                    Console.WriteLine("Side picked: " + teamSide);
+                    string tempFileName = Guid.NewGuid().ToString() + Path.GetExtension(imageUrl);
+                    string tempPath = Path.Combine(Path.GetTempPath(), tempFileName);
+
+                    try
+                    {
+                        if (File.Exists(imageUrl))
+                        {
+                            // Local file case
+                            SetHeroImage(teamSide == "team1" ? "m1t1Logo" : "m1t2Logo", imageUrl);
+                        }
+                        else
+                        {
+                            // Download the image to a local temp folder and set it
+                            using (var client = new WebClient())
+                            {
+                                client.DownloadFile(imageUrl, tempPath);
+                            }
+
+                            // Attempt to set the downloaded image
+                            SetHeroImage(teamSide == "team1" ? "m1t1Logo" : "m1t2Logo", tempPath);
+                        }
+                    }
+                    catch (IOException ioEx)
+                    {
+                        Console.WriteLine("Could not set hero image: " + ioEx.Message);
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine("An unexpected error occurred: " + ex.Message);
+                    }
+                }
+                else
+                {
+                    responseString = "No image URL specified.";
+                }
+            }
+
+            byte[] buffer = System.Text.Encoding.UTF8.GetBytes(responseString);
+            response.ContentLength64 = buffer.Length;
+            response.OutputStream.Write(buffer, 0, buffer.Length);
+            response.OutputStream.Close();
+
+            // Listen for the next request
+            httpListener.BeginGetContext(OnRequestReceived, httpListener);
+        }
+
+
+
+        private void HandleAction(string action)
+        {
+            // Nested function to handle UI thread-safe invocation
+            void InvokeOnUI(Action uiAction)
+            {
+                if (this.InvokeRequired)
+                {
+                    this.Invoke((MethodInvoker)delegate { uiAction(); });
+                }
+                else
+                {
+                    uiAction();
+                }
+            }
+
+            // Switch on the action and call the appropriate method
+            switch (action)
+            {
+                case "swapteams":
+                    InvokeOnUI(() => m1SwapButton_Click(this, null));
+                    break;
+
+                case "increment_t1":
+                    InvokeOnUI(() => IncrementTeamScore("Team1"));
+                    break;
+
+                case "increment_t2":
+                    InvokeOnUI(() => IncrementTeamScore("Team2"));
+                    break;
+
+                case "decrement_t1":
+                    InvokeOnUI(() => DecrementTeamScore("Team1"));
+                    break;
+
+                case "decrement_t2":
+                    InvokeOnUI(() => DecrementTeamScore("Team2"));
+                    break;
+
+                case "reset":
+                    InvokeOnUI(() => m1ResetButton_Click(this, null));
+                    break;
+
+                case "update":
+                    InvokeOnUI(() => updateSeries());
+                    break;
+
+                default:
+                    Console.WriteLine($"Unknown action: {action}");
+                    break;
+            }
+        }
+
+
+        #endregion
+
+
+        #region HotKeys
+        /// <summary>
+        /// Handling Hotkey Details
+        /// </summary>
+        /// 
+        private Control inputControl = null;
+        private Dictionary<string, int> hotkeyIds = new Dictionary<string, int>();
+
+        [DllImport("user32.dll")]
+        private static extern bool RegisterHotKey(IntPtr hWnd, int id, uint fsModifiers, uint vk);
+
+        [DllImport("user32.dll")]
+        private static extern bool UnregisterHotKey(IntPtr hWnd, int id);
+
+        // Modifiers
+        private const uint MOD_ALT = 0x0001;
+        private const uint MOD_CONTROL = 0x0002;
+        private const uint MOD_SHIFT = 0x0004;
+        private const uint MOD_WIN = 0x0008;
+
+        // Hotkey state
+        private bool isShiftPressed = false;
+        private bool isCtrlPressed = false;
+        private bool isAltPressed = false;
+        private Keys selectedKey;
+        private string currentHotkeyName = string.Empty;
+
+        private void SetHotkey(object sender, EventArgs e)
+        {
+            Button clickedButton = sender as Button;
+
+            if (clickedButton != null)
+            {
+                if (!isListeningForKey)
+                {
+                    StartListeningForHotkey(clickedButton.Name);
+                    Console.WriteLine($"Listening for hotkey {clickedButton.Name}");
+                }
+                else
+                {
+                    StopListening();
+                }
+            }
+        }
+
+        private void StartListeningForHotkey(string btnName)
+        {
+            if (!isListeningForKey)
+            {
+                currentHotkeyName = btnName;
+                string inputName = btnName.Replace("BTN_", "INPUT_");
+                inputControl = this.Controls.Find(inputName, true).FirstOrDefault();
+
+                if (inputControl != null)
+                {
+                    inputControl.Text = "Press any key combination...";
+                }
+
+                isListeningForKey = true;
+                this.KeyPreview = true;
+                this.KeyDown += Form1_KeyDown;
+                this.KeyUp += Form1_KeyUp;
+            }
+        }
+
+        private void Form1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (isListeningForKey)
+            {
+                // Track modifier keys
+                isShiftPressed = e.Shift;
+                isCtrlPressed = e.Control;
+                isAltPressed = e.Alt;
+
+                // Capture the non-modifier key
+                if (e.KeyCode != Keys.ShiftKey && e.KeyCode != Keys.ControlKey && e.KeyCode != Keys.Menu && e.KeyCode != Keys.LWin && e.KeyCode != Keys.RWin)
+                {
+                    selectedKey = e.KeyCode;
+                    UpdateHotkeyLabel();
+                    StopListening(); // Stop listening after capturing the hotkey
+                    RegisterHotkeys(); // Register the hotkey after capturing
+                }
+            }
+        }
+
+        private void Form1_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (isListeningForKey)
+            {
+                // Reset modifier keys when released
+                isShiftPressed = e.Shift;
+                isCtrlPressed = e.Control;
+                isAltPressed = e.Alt;
+
+                // Stop listening only when all keys are released
+                if (!isShiftPressed && !isCtrlPressed && !isAltPressed)
+                {
+                    StopListening();
+                }
+            }
+        }
+
+        private void UpdateHotkeyLabel()
+        {
+            string hotkey = "";
+            if (isCtrlPressed) hotkey += "Ctrl + ";
+            if (isShiftPressed) hotkey += "Shift + ";
+            if (isAltPressed) hotkey += "Alt + ";
+            hotkey += selectedKey.ToString();
+
+            inputControl.Text = hotkey;
+        }
+
+        private void StopListening()
+        {
+            isListeningForKey = false;
+            this.KeyPreview = false;
+            this.KeyDown -= Form1_KeyDown;
+            this.KeyUp -= Form1_KeyUp;
+        }
+
+        // Hotkey registration and unregistration
+        private void RegisterHotkeys()
+        {
+            uint modifier = 0;
+            if (isCtrlPressed) modifier |= MOD_CONTROL;
+            if (isShiftPressed) modifier |= MOD_SHIFT;
+            if (isAltPressed) modifier |= MOD_ALT;
+
+            // Unregister only the hotkey associated with the current button
+            UnregisterHotkeys(currentHotkeyName);
+
+            int hotkeyId = currentHotkeyName.GetHashCode();
+            hotkeyIds[currentHotkeyName] = hotkeyId;
+
+            RegisterHotKey(this.Handle, hotkeyId, modifier, (uint)selectedKey);
+            Console.WriteLine($"Registered hotkey for {currentHotkeyName} with ID {hotkeyId}");
+        }
+
+
+        private void UnregisterHotkeys(string hotkeyName)
+        {
+            if (hotkeyIds.ContainsKey(hotkeyName))
+            {
+                int hotkeyId = hotkeyIds[hotkeyName];
+                UnregisterHotKey(this.Handle, hotkeyId);
+                hotkeyIds.Remove(hotkeyName);
+            }
+        }
+
+        protected override void WndProc(ref Message m)
+        {
+            const int WM_HOTKEY = 0x0312;
+            if (m.Msg == WM_HOTKEY)
+            {
+                int pressedHotkeyId = m.WParam.ToInt32();
+                string hotkeyName = hotkeyIds.FirstOrDefault(x => x.Value == pressedHotkeyId).Key;
+                Console.WriteLine($"Hotkey pressed: {hotkeyName}");
+
+                if (!string.IsNullOrEmpty(hotkeyName))
+                {
+                    Console.WriteLine($"Hotkey pressed: {hotkeyName}");
+                    PerformHotkeyAction(hotkeyName);
+                }
+            }
+            base.WndProc(ref m);
+        }
+
+        private void PerformHotkeyAction(string hotkeyName)
+        {
+            switch (hotkeyName)
+            {
+                case "BTN_SET_HK_SWAPTEAMS":
+                    m1SwapButton_Click(hotkeyName, null);
+                    break;
+
+                case "BTN_SET_HK_RESET":
+                    m1ResetButton_Click(hotkeyName, null);
+                    break;
+
+                case "BTN_SET_HK_INCREMENT_T1":
+                    IncrementTeamScore("Team1");
+                    break;
+
+                case "BTN_SET_HK_INCREMENT_T2":
+                    IncrementTeamScore("Team2");
+                    break;
+
+                case "BTN_SET_HK_DECREMENT_T1":
+                    DecrementTeamScore("Team1");
+                    break;
+
+                case "BTN_SET_HK_DECREMENT_T2":
+                    DecrementTeamScore("Team2");
+                    break;
+
+
+
+                // Add more cases for other hotkeys
+                default:
+                    Console.WriteLine($"No action defined for hotkey: {hotkeyName}");
+                    break;
+            }
+        }
+
+        private void IncrementTeamScore(string teamName)
+        {
+            if (teamName == "team1")
+            {
+                NumericUpDown scoreControl = this.Controls.Find("m1t1Score", true).FirstOrDefault() as NumericUpDown;
+                if (scoreControl != null)
+                {
+                    scoreControl.Value += 1;
+                }
+            }
+            else if (teamName == "team2")
+            {
+                NumericUpDown scoreControl = this.Controls.Find("m1t2Score", true).FirstOrDefault() as NumericUpDown;
+                if (scoreControl != null)
+                {
+                    scoreControl.Value += 1;
+                }
+            }
+
+        }
+
+        private void DecrementTeamScore(string teamName)
+        {
+           if (teamName == "team1")
+            {
+                NumericUpDown scoreControl = this.Controls.Find("m1t1Score", true).FirstOrDefault() as NumericUpDown;
+                if (scoreControl != null)
+                {
+                    if (scoreControl.Value > 0)
+                    {
+                        scoreControl.Value -= 1;
+                    }
+                }
+            }
+            else if (teamName == "team2")
+            {
+                NumericUpDown scoreControl = this.Controls.Find("m1t2Score", true).FirstOrDefault() as NumericUpDown;
+                if (scoreControl != null)
+                {
+                    if (scoreControl.Value > 0)
+                    {
+                        scoreControl.Value -= 1;
+                    }
+                }
+            }
+        }
+
+        private void SwapTeams()
+        {
+            MessageBox.Show("Teams swapped!");
+        }
+
+        #endregion
+
+
+
+
+
 
         #region Button Actions
         /// <summary>
@@ -1260,6 +1690,7 @@ namespace OW_Scoreboard_Tool
         /// </summary>
         private void bracketTeamsUpdate_Click(object sender, EventArgs e)
         {
+
             updateText(bracketTeam1, FolderList[9].Replace("\\", ""), BracketFiles[0].Replace(".txt", ""));
             updateText(bracketTeam2, FolderList[9].Replace("\\", ""), BracketFiles[1].Replace(".txt", ""));
             updateText(bracketTeam3, FolderList[9].Replace("\\", ""), BracketFiles[2].Replace(".txt", ""));
@@ -1647,11 +2078,34 @@ namespace OW_Scoreboard_Tool
             open.Filter = "Image Files(*.png; )|*.png";
             open.InitialDirectory = path + FolderList[8];
             DialogResult res = open.ShowDialog();
+
             if (res == DialogResult.OK)
             {
-                ((Button)sender).AccessibleDescription = open.FileName;
+                string selectedFilePath = open.FileName;
+                ((Button)sender).AccessibleDescription = selectedFilePath;
+
+                string baseName = ((Button)sender).Name;
+                string pictureBoxName = "";
+                // Extract the base name from the sender's Name property
+                if (baseName.Contains("ImageButton"))
+                {
+                    baseName = baseName.Replace("ImageButton", "");
+                    pictureBoxName = baseName + "HeroIcon";
+                }
+                else if (baseName.Contains("LogoButton"))
+                {
+                    baseName = baseName.Replace("LogoButton", "");
+                    pictureBoxName = baseName + "Logo";
+                }
+
+                // Construct the PictureBox name
+
+                // Set the image using the shared method
+                SetHeroImage(pictureBoxName, selectedFilePath);
             }
         }
+
+
 
         /// <summary>
         /// Resets the image path attached to the button
@@ -1989,6 +2443,7 @@ namespace OW_Scoreboard_Tool
                     sw.WriteLine(((Hero)field.SelectedValue).Name);
             }
             string imagepath = path + "\\" + folder + "\\" + file + ".png";
+
             ((Hero)field.SelectedValue).Icon.Save(imagepath);
         }
 
@@ -3734,8 +4189,6 @@ namespace OW_Scoreboard_Tool
             DefaultGametypeList.Add(new Gametype("Clash", Properties.Resources.Icon_clash, ""));
 
 
-
-
         }
 
         /// <summary>
@@ -5264,5 +5717,205 @@ namespace OW_Scoreboard_Tool
         }
 
         #endregion
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        private async void checkForUpdatesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string url = "https://raw.githubusercontent.com/GitProductions/BGG/main/README.txt";
+
+            try
+            {
+                using (HttpClient client = new HttpClient())
+                {
+                    HttpResponseMessage response = await client.GetAsync(url);
+
+                    if (response.IsSuccessStatusCode)
+                    {
+                        string content = await response.Content.ReadAsStringAsync();
+                        MessageBox.Show(content); // Display the content in a message box
+                    }
+                    else
+                    {
+                        MessageBox.Show($"Error: {response.StatusCode}");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Exception: {ex.Message}");
+            }
+        }
+
+    
+        private void Hero_SelectionChanged(object sender, EventArgs e)
+        {
+            if (isInitializing)
+            {
+                return;
+            }
+
+            // Cast sender to ComboBox
+            ComboBox comboBox = sender as ComboBox;
+
+            if (comboBox != null && comboBox.SelectedItem is OW_Scoreboard_Tool.Entities.Hero selectedHero)
+            {
+                // Get the 'Name' property of the selected Hero
+                string selectedHeroName = selectedHero.Name;
+                string selectedHeroImagePath = selectedHero.IconPath;
+
+                // Get the current working directory and combine with the relative path
+                string currentDirectory = Directory.GetCurrentDirectory();
+                string absolutePath = Path.Combine(currentDirectory, selectedHeroImagePath.TrimStart('\\'));
+
+                // Construct the PictureBox name
+                string pictureBoxName = comboBox.Name + "Icon";
+
+                // Set the image using the shared method
+                SetHeroImage(pictureBoxName, absolutePath);
+            }
+            else
+            {
+                MessageBox.Show("No hero selected or invalid selection.");
+            }
+        }
+
+
+
+        private void SetHeroImage(string pictureBoxName, string imagePath)
+        {
+            // Find the PictureBox control by name
+            PictureBox pictureBox = this.Controls.Find(pictureBoxName, true).FirstOrDefault() as PictureBox;
+
+            if (pictureBox != null)
+            {
+                // Check if the image path is valid and the file exists
+                if (!string.IsNullOrEmpty(imagePath) && File.Exists(imagePath))
+                {
+                    // Set the PictureBox image using the provided image path
+                    pictureBox.Image = Image.FromFile(imagePath);
+                    pictureBox.SizeMode = PictureBoxSizeMode.Zoom;
+                }
+                else
+                {
+                    // we could have a status bar that displays errors if they occur??
+                    //MessageBox.Show("Image file not found or path is invalid: " + imagePath);
+                }
+            }
+            else
+            {
+                MessageBox.Show($"PictureBox with name {pictureBoxName} not found.");
+            }
+        }
+
+        private void LBL_SET_HK_UPDATE_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void INPUT_SET_HK_UPDATE_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolTip1_Popup(object sender, PopupEventArgs e)
+        {
+            ButtonToolTip.SetToolTip(((Button)sender), "Oh helo there");
+
+        }
+
+
+
+
+        //private bool isShiftPressed = false;
+        //private bool isCtrlPressed = false;
+        //private bool isAltPressed = false;
+
+        //private void SetHotkey1_Click(object sender, EventArgs e)
+        //{
+        //    SetHotkey(sender, e);
+        //}
+
+        //private void SetHotkey(object sender, EventArgs e)
+        //{
+        //    if (!isListeningForKey)
+        //    {
+        //        isListeningForKey = true;
+        //        INPUT_SetHotkey1.Text = "Press any key combination...";
+        //        this.KeyPreview = true;
+        //        this.KeyDown += Form1_KeyDown;
+        //        this.KeyUp += Form1_KeyUp;
+        //    }
+        //    else
+        //    {
+        //        StopListening();
+        //    }
+        //}
+
+        //private void Form1_KeyDown(object sender, KeyEventArgs e)
+        //{
+        //    if (isListeningForKey)
+        //    {
+        //        // Check for modifier keys
+        //        if (e.KeyCode == Keys.ShiftKey)
+        //            isShiftPressed = true;
+        //        if (e.KeyCode == Keys.ControlKey)
+        //            isCtrlPressed = true;
+        //        if (e.KeyCode == Keys.Menu)  // Alt is recognized as 'Menu' in Windows Forms
+        //            isAltPressed = true;
+
+        //        // Check if it's a non-modifier key
+        //        if (e.KeyCode != Keys.ShiftKey && e.KeyCode != Keys.ControlKey && e.KeyCode != Keys.Menu)
+        //        {
+        //            // Build the key combination string
+        //            string hotkey = "";
+        //            if (isCtrlPressed) hotkey += "Ctrl + ";
+        //            if (isShiftPressed) hotkey += "Shift + ";
+        //            if (isAltPressed) hotkey += "Alt + ";
+        //            hotkey += e.KeyCode.ToString();
+
+        //            INPUT_SetHotkey1.Text = hotkey;
+        //        }
+        //    }
+        //}
+
+        //private void Form1_KeyUp(object sender, KeyEventArgs e)
+        //{
+        //    // Reset modifier keys when released
+        //    if (e.KeyCode == Keys.ShiftKey)
+        //        isShiftPressed = false;
+        //    if (e.KeyCode == Keys.ControlKey)
+        //        isCtrlPressed = false;
+        //    if (e.KeyCode == Keys.Menu) // Alt is recognized as 'Menu' in Windows Forms
+        //        isAltPressed = false;
+
+        //    // Stop listening only after all keys are released
+        //    if (!isShiftPressed && !isCtrlPressed && !isAltPressed)
+        //    {
+        //        StopListening();
+        //    }
+        //}
+
+        //private void StopListening()
+        //{
+        //    isListeningForKey = false;
+        //    this.KeyPreview = false;
+        //    this.KeyDown -= Form1_KeyDown;
+        //    this.KeyUp -= Form1_KeyUp;
+        //}
     }
+
 }

@@ -118,56 +118,125 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Icon_none" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Icon-none.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Icon_defense" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Icon-defense.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Icon_support" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Icon-support.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Icon_tank" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Icon-tank.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Icon_control" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Icon-control.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Icon_escort" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Icon-escort.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Icon_hybrid" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Icon-hybrid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Watchpoint_Gibraltar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Watchpoint_Gibraltar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Ana" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Ana.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Esperanca" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Esperanca.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Bastion" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Bastion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Doomfist" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Doomfist.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Icon_tdm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon-tdm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Dva" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Dva.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Numbani" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Numbani.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Genji" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Genji.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Icon_push" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon-push.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Hanzo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Hanzo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Junkertown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Junkertown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Junkrat" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Junkrat.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Lucio" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Lucio.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Icon_control" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon-control.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="McCree" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\McCree.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Throne_of_Anubis" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Throne_of_Anubis.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Samoa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Samoa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Junkrat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Junkrat.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Mei" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Mei.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Lucio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Lucio.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Hollywood" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Hollywood.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sombra" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sombra.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Questionmark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Questionmark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon_clash" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon-clash.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Route_66" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Route_66.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Push" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Push.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Zarya" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Zarya.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Temple_of_Anubis" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Temple_of_Anubis.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Midtown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Midtown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon_hybrid" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon-hybrid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Soldier76" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Soldier76.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon_assault_pool" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon-assault-pool.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Havana" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Havana.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WreckingBall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\WreckingBall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Genji" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Genji.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Phara" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Phara.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon_tank" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon-tank.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LifeWeaver" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LifeWeaver.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon_elmination" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon-elmination.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Zenyatta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Zenyatta.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ilios" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ilios.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon_flex" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon-flex.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon_support" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon-support.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Horizon_Lundar_Colony" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Horizon_Lundar_Colony.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Moira" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Moira.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Mercy" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Mercy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -175,262 +244,196 @@
   <data name="Orisa" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Orisa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Pharah" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Pharah.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Reaper" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Reaper.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Roadhog" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Roadhog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Soldier76" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Soldier76.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sombra" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sombra.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Torbjorn" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Torbjorn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Tracer" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Tracer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Widowmaker" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Widowmaker.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Winston" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Winston.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Zarya" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Zarya.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Zenyatta" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Zenyatta.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Icon_ctf" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Icon-ctf.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Icon_deathmatch" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Icon-deathmatch.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Paraiso" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Paraiso.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Icon_dps" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icon-dps.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Icon_elmination" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Icon-elmination.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Icon_flex" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Icon-flex.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Icon_offense" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Icon-offense.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Icon_tdm" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Icon-tdm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Moira" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Moira.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Icon_assault_pool" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Icon-assault-pool.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Brigitte" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Brigitte.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Reinhardt" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Reinhardt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Symmetra" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Symmetra.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="WreckingBall" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\WreckingBall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Baptiste" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\baptiste.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Questionmark" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Questionmark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Assault" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Assault.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Blizzard_World" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Blizzard_World.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Busan" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Busan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Control" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Control.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Dorado" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Dorado.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Eichenwalde" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Eichenwalde.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Escort" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Escort.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Hanamura" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Hanamura.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Havana" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Havana.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Hollywood" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Hollywood.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Horizon_Lundar_Colony" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Horizon_Lundar_Colony.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Hybrid" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Hybrid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Ilios" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Ilios.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Junkertown" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Junkertown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="King_s_Row" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\King's_Row.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Lijiang_Tower" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Lijiang_Tower.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Nepal" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Nepal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Numbani" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Numbani.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Oasis" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Oasis.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Paris" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Paris.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Rialto" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Rialto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Route_66" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Route_66.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Temple_of_Anubis" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Temple_of_Anubis.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Volskaya_Industries" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Volskaya_Industries.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Watchpoint_Gibraltar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Watchpoint_Gibraltar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Antartic_Peninsula" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Antartic_Peninsula.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Ashe" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Ashe.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Cassidy" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Cassidy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Circuit_Royale" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Circuit_Royale.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Colosseo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Colosseo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Echo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Echo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Esperanca" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Esperanca.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Icon_assault" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Icon-assault.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Icon_push" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Icon-push.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="JunkerQueen" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\JunkerQueen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Kiriko" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Kiriko.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="LifeWeaver" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LifeWeaver.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Midtown" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Midtown.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Paraiso" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Paraiso.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Phara" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Phara.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Push" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Push.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Ramattra" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Ramattra.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Shambali" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Shambali.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sigma" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sigma.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Reinhardt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Reinhardt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Sojourn" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Sojourn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Toronto" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Toronto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Clash" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Clash.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Flashpoint" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Flashpoint.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Hanaoka" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Hanaoka.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Icon_clash" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Icon-clash.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Icon_flashpoint" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Icon-flashpoint.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Illari" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Illari.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Juno" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Juno.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Mauga" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Mauga.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Icon_ctf" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon-ctf.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="New_Junk_City" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\New_Junk_City.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Winston" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Winston.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Assault" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Assault.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Colosseo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Colosseo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon_deathmatch" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon-deathmatch.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Blizzard_World" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Blizzard_World.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ashe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ashe.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Hanzo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Hanzo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pharah" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pharah.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Illari" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Illari.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Control" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Control.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Hanaoka" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Hanaoka.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Symmetra" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Symmetra.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Roadhog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Roadhog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Flashpoint" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Flashpoint.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Eichenwalde" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Eichenwalde.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="King_s_Row" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\King's_Row.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Brigitte" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Brigitte.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Oasis" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Oasis.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon_escort" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon-escort.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ramattra" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Ramattra.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon_none" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon-none.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Hybrid" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Hybrid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Baptiste" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\baptiste.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Shambali" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Shambali.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Rialto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Rialto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon_offense" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon-offense.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Reaper" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Reaper.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Doomfist" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Doomfist.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon_defense" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon-defense.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cassidy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cassidy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Runasapi" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Runasapi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Samoa" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Samoa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Nepal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Nepal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Clash" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Clash.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Tracer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tracer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Hanamura" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Hanamura.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Busan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Busan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon_flashpoint" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon-flashpoint.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sigma" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sigma.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Antartic_Peninsula" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Antartic_Peninsula.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dorado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dorado.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Toronto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Toronto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Suravasa" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Suravasa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Throne_of_Anubis" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Throne_of_Anubis.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Escort" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Escort.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Juno" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Juno.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon_assault" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon-assault.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Circuit_Royale" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Circuit_Royale.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Paris" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Paris.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Torbjorn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Torbjorn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Kiriko" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Kiriko.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dva" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dva.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Volskaya_Industries" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Volskaya_Industries.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mauga" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mauga.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Widowmaker" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Widowmaker.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Lijiang_Tower" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Lijiang_Tower.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Venture" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Venture.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nologo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nologo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -9,7 +9,7 @@ namespace OW_Scoreboard_Tool
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        
+
 
         /// <summary>
         /// Clean up any resources being used.
@@ -218,6 +218,20 @@ namespace OW_Scoreboard_Tool
             this.replayClean = new System.Windows.Forms.Button();
             this.replayReset = new System.Windows.Forms.Button();
             this.Match_1 = new System.Windows.Forms.TabPage();
+            this.m1t2Logo = new System.Windows.Forms.PictureBox();
+            this.m1t1Logo = new System.Windows.Forms.PictureBox();
+            this.m1t2p6HeroIcon = new System.Windows.Forms.PictureBox();
+            this.m1t2p5HeroIcon = new System.Windows.Forms.PictureBox();
+            this.m1t2p4HeroIcon = new System.Windows.Forms.PictureBox();
+            this.m1t2p3HeroIcon = new System.Windows.Forms.PictureBox();
+            this.m1t2p2HeroIcon = new System.Windows.Forms.PictureBox();
+            this.m1t2p1HeroIcon = new System.Windows.Forms.PictureBox();
+            this.m1t1p6HeroIcon = new System.Windows.Forms.PictureBox();
+            this.m1t1p5HeroIcon = new System.Windows.Forms.PictureBox();
+            this.m1t1p4HeroIcon = new System.Windows.Forms.PictureBox();
+            this.m1t1p3HeroIcon = new System.Windows.Forms.PictureBox();
+            this.m1t1p2HeroIcon = new System.Windows.Forms.PictureBox();
+            this.m1t1p1HeroIcon = new System.Windows.Forms.PictureBox();
             this.label28 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.m1t2ColorButton = new System.Windows.Forms.Button();
@@ -636,12 +650,49 @@ namespace OW_Scoreboard_Tool
             this.bracketTeam3 = new System.Windows.Forms.TextBox();
             this.bracketTeam2 = new System.Windows.Forms.TextBox();
             this.bracketTeam1 = new System.Windows.Forms.TextBox();
+            this.tabpage2 = new System.Windows.Forms.TabPage();
+            this.MatchHotkeyGroup = new System.Windows.Forms.GroupBox();
+            this.LBL_SET_HK_UPDATE = new System.Windows.Forms.Label();
+            this.BTN_SET_HK_DECREMENT_T2 = new System.Windows.Forms.Button();
+            this.BTN_SET_HK_RESET = new System.Windows.Forms.Button();
+            this.INPUT_SET_HK_DECREMENT_T2 = new System.Windows.Forms.Label();
+            this.LBL_SET_HK_DECREMENT_T2 = new System.Windows.Forms.Label();
+            this.LBL_SET_HK_SWAPTEAMS = new System.Windows.Forms.Label();
+            this.BTN_SET_HK_DECREMENT_T1 = new System.Windows.Forms.Button();
+            this.INPUT_SET_HK_RESET = new System.Windows.Forms.Label();
+            this.INPUT_SET_HK_DECREMENT_T1 = new System.Windows.Forms.Label();
+            this.INPUT_SET_HK_SWAPTEAMS = new System.Windows.Forms.Label();
+            this.LBL_SET_HK_DECREMENT_T1 = new System.Windows.Forms.Label();
+            this.LBL_SET_HK_RESET = new System.Windows.Forms.Label();
+            this.BTN_SET_HK_INCREMENT_T2 = new System.Windows.Forms.Button();
+            this.BTN_SET_HK_SWAPTEAMS = new System.Windows.Forms.Button();
+            this.INPUT_SET_HK_INCREMENT_T2 = new System.Windows.Forms.Label();
+            this.INPUT_SET_HK_UPDATE = new System.Windows.Forms.Label();
+            this.LBL_SET_HK_INCREMENT_T2 = new System.Windows.Forms.Label();
+            this.BTN_SET_HK_UPDATE = new System.Windows.Forms.Button();
+            this.BTN_SET_HK_INCREMENT_T1 = new System.Windows.Forms.Button();
+            this.LBL_SET_HK_INCREMENT_T1 = new System.Windows.Forms.Label();
+            this.INPUT_SET_HK_INCREMENT_T1 = new System.Windows.Forms.Label();
             this.colorThemeDialog = new System.Windows.Forms.ColorDialog();
             this.ButtonToolTip = new System.Windows.Forms.ToolTip(this.components);
             this.menuStrip1.SuspendLayout();
             this.General_Info.SuspendLayout();
             this.imageButtonContextMenu.SuspendLayout();
             this.Match_1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.m1t2Logo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m1t1Logo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m1t2p6HeroIcon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m1t2p5HeroIcon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m1t2p4HeroIcon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m1t2p3HeroIcon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m1t2p2HeroIcon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m1t2p1HeroIcon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m1t1p6HeroIcon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m1t1p5HeroIcon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m1t1p4HeroIcon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m1t1p3HeroIcon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m1t1p2HeroIcon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m1t1p1HeroIcon)).BeginInit();
             this.m1Map.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m1m7t2Score)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m1m7t1Score)).BeginInit();
@@ -792,6 +843,8 @@ namespace OW_Scoreboard_Tool
             ((System.ComponentModel.ISupportInitialize)(this.bracketR1M2Score1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bracketR1M1Score2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bracketR1M1Score1)).BeginInit();
+            this.tabpage2.SuspendLayout();
+            this.MatchHotkeyGroup.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -889,34 +942,34 @@ namespace OW_Scoreboard_Tool
             this.deleteGametypeToolStripMenuItem,
             this.defaultGametypesToolStripMenuItem});
             this.mapToolStripMenuItem.Name = "mapToolStripMenuItem";
-            this.mapToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.mapToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
             this.mapToolStripMenuItem.Text = "Gametype";
             // 
             // createGametypeToolStripMenuItem
             // 
             this.createGametypeToolStripMenuItem.Name = "createGametypeToolStripMenuItem";
-            this.createGametypeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.createGametypeToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
             this.createGametypeToolStripMenuItem.Text = "Create Gametype";
             this.createGametypeToolStripMenuItem.Click += new System.EventHandler(this.createGametypeToolStripMenuItem_Click);
             // 
             // editGametypeToolStripMenuItem
             // 
             this.editGametypeToolStripMenuItem.Name = "editGametypeToolStripMenuItem";
-            this.editGametypeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.editGametypeToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
             this.editGametypeToolStripMenuItem.Text = "Edit Gametype";
             this.editGametypeToolStripMenuItem.Click += new System.EventHandler(this.editGametypeToolStripMenuItem_Click);
             // 
             // deleteGametypeToolStripMenuItem
             // 
             this.deleteGametypeToolStripMenuItem.Name = "deleteGametypeToolStripMenuItem";
-            this.deleteGametypeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.deleteGametypeToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
             this.deleteGametypeToolStripMenuItem.Text = "Delete Gametype";
             this.deleteGametypeToolStripMenuItem.Click += new System.EventHandler(this.deleteGametypeToolStripMenuItem_Click);
             // 
             // defaultGametypesToolStripMenuItem
             // 
             this.defaultGametypesToolStripMenuItem.Name = "defaultGametypesToolStripMenuItem";
-            this.defaultGametypesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.defaultGametypesToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
             this.defaultGametypesToolStripMenuItem.Text = "Default Gametypes";
             this.defaultGametypesToolStripMenuItem.Click += new System.EventHandler(this.defaultGametypesToolStripMenuItem_Click);
             // 
@@ -928,7 +981,7 @@ namespace OW_Scoreboard_Tool
             this.deleteHeroToolStripMenuItem,
             this.defaultHeroesToolStripMenuItem});
             this.heroToolStripMenuItem.Name = "heroToolStripMenuItem";
-            this.heroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.heroToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
             this.heroToolStripMenuItem.Text = "Hero";
             // 
             // createHeroToolStripMenuItem
@@ -941,14 +994,14 @@ namespace OW_Scoreboard_Tool
             // editHeroToolStripMenuItem
             // 
             this.editHeroToolStripMenuItem.Name = "editHeroToolStripMenuItem";
-            this.editHeroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.editHeroToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.editHeroToolStripMenuItem.Text = "Edit Hero";
             this.editHeroToolStripMenuItem.Click += new System.EventHandler(this.editHeroToolStripMenuItem_Click);
             // 
             // deleteHeroToolStripMenuItem
             // 
             this.deleteHeroToolStripMenuItem.Name = "deleteHeroToolStripMenuItem";
-            this.deleteHeroToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.deleteHeroToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.deleteHeroToolStripMenuItem.Text = "Delete Hero";
             this.deleteHeroToolStripMenuItem.Click += new System.EventHandler(this.deleteHeroToolStripMenuItem_Click);
             // 
@@ -967,7 +1020,7 @@ namespace OW_Scoreboard_Tool
             this.deleteMapToolStripMenuItem,
             this.defaultMapsToolStripMenuItem});
             this.mapToolStripMenuItem1.Name = "mapToolStripMenuItem1";
-            this.mapToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.mapToolStripMenuItem1.Size = new System.Drawing.Size(129, 22);
             this.mapToolStripMenuItem1.Text = "Map";
             // 
             // createMapToolStripMenuItem
@@ -980,14 +1033,14 @@ namespace OW_Scoreboard_Tool
             // editMapToolStripMenuItem
             // 
             this.editMapToolStripMenuItem.Name = "editMapToolStripMenuItem";
-            this.editMapToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.editMapToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
             this.editMapToolStripMenuItem.Text = "Edit Map";
             this.editMapToolStripMenuItem.Click += new System.EventHandler(this.editMapToolStripMenuItem_Click);
             // 
             // deleteMapToolStripMenuItem
             // 
             this.deleteMapToolStripMenuItem.Name = "deleteMapToolStripMenuItem";
-            this.deleteMapToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.deleteMapToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
             this.deleteMapToolStripMenuItem.Text = "Delete Map";
             this.deleteMapToolStripMenuItem.Click += new System.EventHandler(this.deleteMapToolStripMenuItem_Click);
             // 
@@ -1006,7 +1059,7 @@ namespace OW_Scoreboard_Tool
             this.deleteRoleToolStripMenuItem,
             this.defaultRolesToolStripMenuItem});
             this.roleToolStripMenuItem.Name = "roleToolStripMenuItem";
-            this.roleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.roleToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
             this.roleToolStripMenuItem.Text = "Role";
             // 
             // createRoleToolStripMenuItem
@@ -1019,14 +1072,14 @@ namespace OW_Scoreboard_Tool
             // editRoleToolStripMenuItem
             // 
             this.editRoleToolStripMenuItem.Name = "editRoleToolStripMenuItem";
-            this.editRoleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.editRoleToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.editRoleToolStripMenuItem.Text = "Edit Role";
             this.editRoleToolStripMenuItem.Click += new System.EventHandler(this.editRoleToolStripMenuItem_Click);
             // 
             // deleteRoleToolStripMenuItem
             // 
             this.deleteRoleToolStripMenuItem.Name = "deleteRoleToolStripMenuItem";
-            this.deleteRoleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.deleteRoleToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.deleteRoleToolStripMenuItem.Text = "Delete Role";
             this.deleteRoleToolStripMenuItem.Click += new System.EventHandler(this.deleteRoleToolStripMenuItem_Click);
             // 
@@ -1040,7 +1093,7 @@ namespace OW_Scoreboard_Tool
             // defaultAllToolStripMenuItem
             // 
             this.defaultAllToolStripMenuItem.Name = "defaultAllToolStripMenuItem";
-            this.defaultAllToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.defaultAllToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
             this.defaultAllToolStripMenuItem.Text = "Default All";
             this.defaultAllToolStripMenuItem.Click += new System.EventHandler(this.defaultAllToolStripMenuItem_Click);
             // 
@@ -1383,6 +1436,18 @@ namespace OW_Scoreboard_Tool
             this.imageLabel15.TabIndex = 200;
             this.imageLabel15.Text = "Image15";
             // 
+            // imageButton28
+            // 
+            this.imageButton28.ContextMenuStrip = this.imageButtonContextMenu;
+            this.imageButton28.Location = new System.Drawing.Point(522, 371);
+            this.imageButton28.Name = "imageButton28";
+            this.imageButton28.Size = new System.Drawing.Size(27, 23);
+            this.imageButton28.TabIndex = 199;
+            this.imageButton28.Text = "...";
+            this.imageButton28.UseVisualStyleBackColor = true;
+            this.imageButton28.Click += new System.EventHandler(this.GetImageForButton);
+            this.imageButton28.MouseHover += new System.EventHandler(this.ToolTipMouseHover);
+            // 
             // imageButtonContextMenu
             // 
             this.imageButtonContextMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -1396,18 +1461,6 @@ namespace OW_Scoreboard_Tool
             this.resetButtonImagePath.Size = new System.Drawing.Size(138, 22);
             this.resetButtonImagePath.Text = "Reset Image";
             this.resetButtonImagePath.Click += new System.EventHandler(this.resetButtonImagePath_Click);
-            // 
-            // imageButton28
-            // 
-            this.imageButton28.ContextMenuStrip = this.imageButtonContextMenu;
-            this.imageButton28.Location = new System.Drawing.Point(522, 371);
-            this.imageButton28.Name = "imageButton28";
-            this.imageButton28.Size = new System.Drawing.Size(27, 23);
-            this.imageButton28.TabIndex = 199;
-            this.imageButton28.Text = "...";
-            this.imageButton28.UseVisualStyleBackColor = true;
-            this.imageButton28.Click += new System.EventHandler(this.GetImageForButton);
-            this.imageButton28.MouseHover += new System.EventHandler(this.ToolTipMouseHover);
             // 
             // imageButton27
             // 
@@ -2739,6 +2792,20 @@ namespace OW_Scoreboard_Tool
             // 
             // Match_1
             // 
+            this.Match_1.Controls.Add(this.m1t2Logo);
+            this.Match_1.Controls.Add(this.m1t1Logo);
+            this.Match_1.Controls.Add(this.m1t2p6HeroIcon);
+            this.Match_1.Controls.Add(this.m1t2p5HeroIcon);
+            this.Match_1.Controls.Add(this.m1t2p4HeroIcon);
+            this.Match_1.Controls.Add(this.m1t2p3HeroIcon);
+            this.Match_1.Controls.Add(this.m1t2p2HeroIcon);
+            this.Match_1.Controls.Add(this.m1t2p1HeroIcon);
+            this.Match_1.Controls.Add(this.m1t1p6HeroIcon);
+            this.Match_1.Controls.Add(this.m1t1p5HeroIcon);
+            this.Match_1.Controls.Add(this.m1t1p4HeroIcon);
+            this.Match_1.Controls.Add(this.m1t1p3HeroIcon);
+            this.Match_1.Controls.Add(this.m1t1p2HeroIcon);
+            this.Match_1.Controls.Add(this.m1t1p1HeroIcon);
             this.Match_1.Controls.Add(this.label28);
             this.Match_1.Controls.Add(this.label27);
             this.Match_1.Controls.Add(this.m1t2ColorButton);
@@ -2889,6 +2956,136 @@ namespace OW_Scoreboard_Tool
             this.Match_1.TabIndex = 0;
             this.Match_1.Text = "Match";
             this.Match_1.UseVisualStyleBackColor = true;
+            // 
+            // m1t2Logo
+            // 
+            this.m1t2Logo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.m1t2Logo.Image = global::OW_Scoreboard_Tool.Properties.Resources.nologo;
+            this.m1t2Logo.Location = new System.Drawing.Point(500, 7);
+            this.m1t2Logo.Name = "m1t2Logo";
+            this.m1t2Logo.Size = new System.Drawing.Size(75, 35);
+            this.m1t2Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.m1t2Logo.TabIndex = 148;
+            this.m1t2Logo.TabStop = false;
+            // 
+            // m1t1Logo
+            // 
+            this.m1t1Logo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.m1t1Logo.Image = global::OW_Scoreboard_Tool.Properties.Resources.nologo;
+            this.m1t1Logo.Location = new System.Drawing.Point(357, 6);
+            this.m1t1Logo.Name = "m1t1Logo";
+            this.m1t1Logo.Size = new System.Drawing.Size(75, 35);
+            this.m1t1Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.m1t1Logo.TabIndex = 147;
+            this.m1t1Logo.TabStop = false;
+            // 
+            // m1t2p6HeroIcon
+            // 
+            this.m1t2p6HeroIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.m1t2p6HeroIcon.Location = new System.Drawing.Point(499, 292);
+            this.m1t2p6HeroIcon.Name = "m1t2p6HeroIcon";
+            this.m1t2p6HeroIcon.Size = new System.Drawing.Size(36, 21);
+            this.m1t2p6HeroIcon.TabIndex = 146;
+            this.m1t2p6HeroIcon.TabStop = false;
+            // 
+            // m1t2p5HeroIcon
+            // 
+            this.m1t2p5HeroIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.m1t2p5HeroIcon.Location = new System.Drawing.Point(499, 253);
+            this.m1t2p5HeroIcon.Name = "m1t2p5HeroIcon";
+            this.m1t2p5HeroIcon.Size = new System.Drawing.Size(36, 21);
+            this.m1t2p5HeroIcon.TabIndex = 145;
+            this.m1t2p5HeroIcon.TabStop = false;
+            // 
+            // m1t2p4HeroIcon
+            // 
+            this.m1t2p4HeroIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.m1t2p4HeroIcon.Location = new System.Drawing.Point(499, 214);
+            this.m1t2p4HeroIcon.Name = "m1t2p4HeroIcon";
+            this.m1t2p4HeroIcon.Size = new System.Drawing.Size(36, 21);
+            this.m1t2p4HeroIcon.TabIndex = 144;
+            this.m1t2p4HeroIcon.TabStop = false;
+            // 
+            // m1t2p3HeroIcon
+            // 
+            this.m1t2p3HeroIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.m1t2p3HeroIcon.Location = new System.Drawing.Point(499, 175);
+            this.m1t2p3HeroIcon.Name = "m1t2p3HeroIcon";
+            this.m1t2p3HeroIcon.Size = new System.Drawing.Size(36, 21);
+            this.m1t2p3HeroIcon.TabIndex = 143;
+            this.m1t2p3HeroIcon.TabStop = false;
+            // 
+            // m1t2p2HeroIcon
+            // 
+            this.m1t2p2HeroIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.m1t2p2HeroIcon.Location = new System.Drawing.Point(499, 136);
+            this.m1t2p2HeroIcon.Name = "m1t2p2HeroIcon";
+            this.m1t2p2HeroIcon.Size = new System.Drawing.Size(36, 21);
+            this.m1t2p2HeroIcon.TabIndex = 142;
+            this.m1t2p2HeroIcon.TabStop = false;
+            // 
+            // m1t2p1HeroIcon
+            // 
+            this.m1t2p1HeroIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.m1t2p1HeroIcon.Location = new System.Drawing.Point(499, 96);
+            this.m1t2p1HeroIcon.Name = "m1t2p1HeroIcon";
+            this.m1t2p1HeroIcon.Size = new System.Drawing.Size(36, 21);
+            this.m1t2p1HeroIcon.TabIndex = 141;
+            this.m1t2p1HeroIcon.TabStop = false;
+            // 
+            // m1t1p6HeroIcon
+            // 
+            this.m1t1p6HeroIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.m1t1p6HeroIcon.Location = new System.Drawing.Point(396, 292);
+            this.m1t1p6HeroIcon.Name = "m1t1p6HeroIcon";
+            this.m1t1p6HeroIcon.Size = new System.Drawing.Size(36, 21);
+            this.m1t1p6HeroIcon.TabIndex = 140;
+            this.m1t1p6HeroIcon.TabStop = false;
+            // 
+            // m1t1p5HeroIcon
+            // 
+            this.m1t1p5HeroIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.m1t1p5HeroIcon.Location = new System.Drawing.Point(396, 253);
+            this.m1t1p5HeroIcon.Name = "m1t1p5HeroIcon";
+            this.m1t1p5HeroIcon.Size = new System.Drawing.Size(36, 21);
+            this.m1t1p5HeroIcon.TabIndex = 139;
+            this.m1t1p5HeroIcon.TabStop = false;
+            // 
+            // m1t1p4HeroIcon
+            // 
+            this.m1t1p4HeroIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.m1t1p4HeroIcon.Location = new System.Drawing.Point(396, 214);
+            this.m1t1p4HeroIcon.Name = "m1t1p4HeroIcon";
+            this.m1t1p4HeroIcon.Size = new System.Drawing.Size(36, 21);
+            this.m1t1p4HeroIcon.TabIndex = 138;
+            this.m1t1p4HeroIcon.TabStop = false;
+            // 
+            // m1t1p3HeroIcon
+            // 
+            this.m1t1p3HeroIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.m1t1p3HeroIcon.Location = new System.Drawing.Point(396, 175);
+            this.m1t1p3HeroIcon.Name = "m1t1p3HeroIcon";
+            this.m1t1p3HeroIcon.Size = new System.Drawing.Size(36, 21);
+            this.m1t1p3HeroIcon.TabIndex = 137;
+            this.m1t1p3HeroIcon.TabStop = false;
+            // 
+            // m1t1p2HeroIcon
+            // 
+            this.m1t1p2HeroIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.m1t1p2HeroIcon.Location = new System.Drawing.Point(396, 136);
+            this.m1t1p2HeroIcon.Name = "m1t1p2HeroIcon";
+            this.m1t1p2HeroIcon.Size = new System.Drawing.Size(36, 21);
+            this.m1t1p2HeroIcon.TabIndex = 136;
+            this.m1t1p2HeroIcon.TabStop = false;
+            // 
+            // m1t1p1HeroIcon
+            // 
+            this.m1t1p1HeroIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.m1t1p1HeroIcon.Location = new System.Drawing.Point(396, 96);
+            this.m1t1p1HeroIcon.Name = "m1t1p1HeroIcon";
+            this.m1t1p1HeroIcon.Size = new System.Drawing.Size(36, 21);
+            this.m1t1p1HeroIcon.TabIndex = 135;
+            this.m1t1p1HeroIcon.TabStop = false;
             // 
             // label28
             // 
@@ -3506,7 +3703,7 @@ namespace OW_Scoreboard_Tool
             // t2LogoLabel
             // 
             this.t2LogoLabel.AutoSize = true;
-            this.t2LogoLabel.Location = new System.Drawing.Point(568, 5);
+            this.t2LogoLabel.Location = new System.Drawing.Point(575, 5);
             this.t2LogoLabel.Name = "t2LogoLabel";
             this.t2LogoLabel.Size = new System.Drawing.Size(70, 13);
             this.t2LogoLabel.TabIndex = 0;
@@ -3515,7 +3712,7 @@ namespace OW_Scoreboard_Tool
             // t1LogoLabel
             // 
             this.t1LogoLabel.AutoSize = true;
-            this.t1LogoLabel.Location = new System.Drawing.Point(290, 5);
+            this.t1LogoLabel.Location = new System.Drawing.Point(289, 5);
             this.t1LogoLabel.Name = "t1LogoLabel";
             this.t1LogoLabel.Size = new System.Drawing.Size(70, 13);
             this.t1LogoLabel.TabIndex = 0;
@@ -4397,6 +4594,7 @@ namespace OW_Scoreboard_Tool
             this.m1t2p6Hero.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.m1t2p6Hero.Size = new System.Drawing.Size(100, 21);
             this.m1t2p6Hero.TabIndex = 34;
+            this.m1t2p6Hero.SelectedIndexChanged += new System.EventHandler(this.Hero_SelectionChanged);
             // 
             // m1t2p5Hero
             // 
@@ -4450,6 +4648,7 @@ namespace OW_Scoreboard_Tool
             this.m1t2p5Hero.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.m1t2p5Hero.Size = new System.Drawing.Size(100, 21);
             this.m1t2p5Hero.TabIndex = 33;
+            this.m1t2p5Hero.SelectedIndexChanged += new System.EventHandler(this.Hero_SelectionChanged);
             // 
             // m1t2p4Hero
             // 
@@ -4503,6 +4702,7 @@ namespace OW_Scoreboard_Tool
             this.m1t2p4Hero.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.m1t2p4Hero.Size = new System.Drawing.Size(100, 21);
             this.m1t2p4Hero.TabIndex = 32;
+            this.m1t2p4Hero.SelectedIndexChanged += new System.EventHandler(this.Hero_SelectionChanged);
             // 
             // m1t2p3Hero
             // 
@@ -4556,6 +4756,7 @@ namespace OW_Scoreboard_Tool
             this.m1t2p3Hero.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.m1t2p3Hero.Size = new System.Drawing.Size(100, 21);
             this.m1t2p3Hero.TabIndex = 31;
+            this.m1t2p3Hero.SelectedIndexChanged += new System.EventHandler(this.Hero_SelectionChanged);
             // 
             // m1t2p2Hero
             // 
@@ -4609,6 +4810,7 @@ namespace OW_Scoreboard_Tool
             this.m1t2p2Hero.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.m1t2p2Hero.Size = new System.Drawing.Size(100, 21);
             this.m1t2p2Hero.TabIndex = 30;
+            this.m1t2p2Hero.SelectedIndexChanged += new System.EventHandler(this.Hero_SelectionChanged);
             // 
             // m1t2p1Hero
             // 
@@ -4662,6 +4864,7 @@ namespace OW_Scoreboard_Tool
             this.m1t2p1Hero.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.m1t2p1Hero.Size = new System.Drawing.Size(100, 21);
             this.m1t2p1Hero.TabIndex = 29;
+            this.m1t2p1Hero.SelectedIndexChanged += new System.EventHandler(this.Hero_SelectionChanged);
             // 
             // m1t1p6Hero
             // 
@@ -4714,6 +4917,7 @@ namespace OW_Scoreboard_Tool
             this.m1t1p6Hero.Name = "m1t1p6Hero";
             this.m1t1p6Hero.Size = new System.Drawing.Size(100, 21);
             this.m1t1p6Hero.TabIndex = 14;
+            this.m1t1p6Hero.SelectedIndexChanged += new System.EventHandler(this.Hero_SelectionChanged);
             // 
             // m1t1p5Hero
             // 
@@ -4766,6 +4970,7 @@ namespace OW_Scoreboard_Tool
             this.m1t1p5Hero.Name = "m1t1p5Hero";
             this.m1t1p5Hero.Size = new System.Drawing.Size(100, 21);
             this.m1t1p5Hero.TabIndex = 13;
+            this.m1t1p5Hero.SelectedIndexChanged += new System.EventHandler(this.Hero_SelectionChanged);
             // 
             // m1t1p4Hero
             // 
@@ -4818,6 +5023,7 @@ namespace OW_Scoreboard_Tool
             this.m1t1p4Hero.Name = "m1t1p4Hero";
             this.m1t1p4Hero.Size = new System.Drawing.Size(100, 21);
             this.m1t1p4Hero.TabIndex = 12;
+            this.m1t1p4Hero.SelectedIndexChanged += new System.EventHandler(this.Hero_SelectionChanged);
             // 
             // m1t1p3Hero
             // 
@@ -4870,6 +5076,7 @@ namespace OW_Scoreboard_Tool
             this.m1t1p3Hero.Name = "m1t1p3Hero";
             this.m1t1p3Hero.Size = new System.Drawing.Size(100, 21);
             this.m1t1p3Hero.TabIndex = 11;
+            this.m1t1p3Hero.SelectedIndexChanged += new System.EventHandler(this.Hero_SelectionChanged);
             // 
             // m1t1p2Hero
             // 
@@ -4922,6 +5129,7 @@ namespace OW_Scoreboard_Tool
             this.m1t1p2Hero.Name = "m1t1p2Hero";
             this.m1t1p2Hero.Size = new System.Drawing.Size(100, 21);
             this.m1t1p2Hero.TabIndex = 10;
+            this.m1t1p2Hero.SelectedIndexChanged += new System.EventHandler(this.Hero_SelectionChanged);
             // 
             // m1t1p1Hero
             // 
@@ -4974,6 +5182,7 @@ namespace OW_Scoreboard_Tool
             this.m1t1p1Hero.Name = "m1t1p1Hero";
             this.m1t1p1Hero.Size = new System.Drawing.Size(100, 21);
             this.m1t1p1Hero.TabIndex = 9;
+            this.m1t1p1Hero.SelectedIndexChanged += new System.EventHandler(this.Hero_SelectionChanged);
             // 
             // m1ResetButton
             // 
@@ -5160,6 +5369,7 @@ namespace OW_Scoreboard_Tool
             this.tabControl1.Controls.Add(this.General_Info);
             this.tabControl1.Controls.Add(this.Replay_Manager);
             this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabpage2);
             this.tabControl1.Location = new System.Drawing.Point(13, 27);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -7749,6 +7959,252 @@ namespace OW_Scoreboard_Tool
             this.bracketTeam1.Size = new System.Drawing.Size(100, 20);
             this.bracketTeam1.TabIndex = 0;
             // 
+            // tabpage2
+            // 
+            this.tabpage2.Controls.Add(this.MatchHotkeyGroup);
+            this.tabpage2.Location = new System.Drawing.Point(4, 22);
+            this.tabpage2.Name = "tabpage2";
+            this.tabpage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabpage2.Size = new System.Drawing.Size(931, 408);
+            this.tabpage2.TabIndex = 4;
+            this.tabpage2.Text = "Hotkeys";
+            this.tabpage2.UseVisualStyleBackColor = true;
+            // 
+            // MatchHotkeyGroup
+            // 
+            this.MatchHotkeyGroup.Controls.Add(this.LBL_SET_HK_UPDATE);
+            this.MatchHotkeyGroup.Controls.Add(this.BTN_SET_HK_DECREMENT_T2);
+            this.MatchHotkeyGroup.Controls.Add(this.BTN_SET_HK_RESET);
+            this.MatchHotkeyGroup.Controls.Add(this.INPUT_SET_HK_DECREMENT_T2);
+            this.MatchHotkeyGroup.Controls.Add(this.LBL_SET_HK_DECREMENT_T2);
+            this.MatchHotkeyGroup.Controls.Add(this.LBL_SET_HK_SWAPTEAMS);
+            this.MatchHotkeyGroup.Controls.Add(this.BTN_SET_HK_DECREMENT_T1);
+            this.MatchHotkeyGroup.Controls.Add(this.INPUT_SET_HK_RESET);
+            this.MatchHotkeyGroup.Controls.Add(this.INPUT_SET_HK_DECREMENT_T1);
+            this.MatchHotkeyGroup.Controls.Add(this.INPUT_SET_HK_SWAPTEAMS);
+            this.MatchHotkeyGroup.Controls.Add(this.LBL_SET_HK_DECREMENT_T1);
+            this.MatchHotkeyGroup.Controls.Add(this.LBL_SET_HK_RESET);
+            this.MatchHotkeyGroup.Controls.Add(this.BTN_SET_HK_INCREMENT_T2);
+            this.MatchHotkeyGroup.Controls.Add(this.BTN_SET_HK_SWAPTEAMS);
+            this.MatchHotkeyGroup.Controls.Add(this.INPUT_SET_HK_INCREMENT_T2);
+            this.MatchHotkeyGroup.Controls.Add(this.INPUT_SET_HK_UPDATE);
+            this.MatchHotkeyGroup.Controls.Add(this.LBL_SET_HK_INCREMENT_T2);
+            this.MatchHotkeyGroup.Controls.Add(this.BTN_SET_HK_UPDATE);
+            this.MatchHotkeyGroup.Controls.Add(this.BTN_SET_HK_INCREMENT_T1);
+            this.MatchHotkeyGroup.Controls.Add(this.LBL_SET_HK_INCREMENT_T1);
+            this.MatchHotkeyGroup.Controls.Add(this.INPUT_SET_HK_INCREMENT_T1);
+            this.MatchHotkeyGroup.Location = new System.Drawing.Point(6, 61);
+            this.MatchHotkeyGroup.Name = "MatchHotkeyGroup";
+            this.MatchHotkeyGroup.Size = new System.Drawing.Size(341, 324);
+            this.MatchHotkeyGroup.TabIndex = 21;
+            this.MatchHotkeyGroup.TabStop = false;
+            this.MatchHotkeyGroup.Text = "Match";
+            // 
+            // LBL_SET_HK_UPDATE
+            // 
+            this.LBL_SET_HK_UPDATE.AutoSize = true;
+            this.LBL_SET_HK_UPDATE.Location = new System.Drawing.Point(32, 64);
+            this.LBL_SET_HK_UPDATE.Name = "LBL_SET_HK_UPDATE";
+            this.LBL_SET_HK_UPDATE.Size = new System.Drawing.Size(75, 13);
+            this.LBL_SET_HK_UPDATE.TabIndex = 9;
+            this.LBL_SET_HK_UPDATE.Text = "Update Match";
+            this.LBL_SET_HK_UPDATE.Click += new System.EventHandler(this.LBL_SET_HK_UPDATE_Click);
+            // 
+            // BTN_SET_HK_DECREMENT_T2
+            // 
+            this.BTN_SET_HK_DECREMENT_T2.Location = new System.Drawing.Point(262, 206);
+            this.BTN_SET_HK_DECREMENT_T2.Name = "BTN_SET_HK_DECREMENT_T2";
+            this.BTN_SET_HK_DECREMENT_T2.Size = new System.Drawing.Size(43, 23);
+            this.BTN_SET_HK_DECREMENT_T2.TabIndex = 17;
+            this.BTN_SET_HK_DECREMENT_T2.Text = "SET";
+            this.BTN_SET_HK_DECREMENT_T2.UseVisualStyleBackColor = true;
+            this.BTN_SET_HK_DECREMENT_T2.Click += new System.EventHandler(this.SetHotkey);
+            // 
+            // BTN_SET_HK_RESET
+            // 
+            this.BTN_SET_HK_RESET.Location = new System.Drawing.Point(262, 88);
+            this.BTN_SET_HK_RESET.Name = "BTN_SET_HK_RESET";
+            this.BTN_SET_HK_RESET.Size = new System.Drawing.Size(43, 23);
+            this.BTN_SET_HK_RESET.TabIndex = 20;
+            this.BTN_SET_HK_RESET.Text = "SET";
+            this.BTN_SET_HK_RESET.UseVisualStyleBackColor = true;
+            this.BTN_SET_HK_RESET.Click += new System.EventHandler(this.SetHotkey);
+            // 
+            // INPUT_SET_HK_DECREMENT_T2
+            // 
+            this.INPUT_SET_HK_DECREMENT_T2.AutoSize = true;
+            this.INPUT_SET_HK_DECREMENT_T2.BackColor = System.Drawing.Color.Gainsboro;
+            this.INPUT_SET_HK_DECREMENT_T2.Location = new System.Drawing.Point(113, 211);
+            this.INPUT_SET_HK_DECREMENT_T2.MinimumSize = new System.Drawing.Size(140, 0);
+            this.INPUT_SET_HK_DECREMENT_T2.Name = "INPUT_SET_HK_DECREMENT_T2";
+            this.INPUT_SET_HK_DECREMENT_T2.Size = new System.Drawing.Size(140, 13);
+            this.INPUT_SET_HK_DECREMENT_T2.TabIndex = 16;
+            // 
+            // LBL_SET_HK_DECREMENT_T2
+            // 
+            this.LBL_SET_HK_DECREMENT_T2.AutoSize = true;
+            this.LBL_SET_HK_DECREMENT_T2.Location = new System.Drawing.Point(12, 211);
+            this.LBL_SET_HK_DECREMENT_T2.Name = "LBL_SET_HK_DECREMENT_T2";
+            this.LBL_SET_HK_DECREMENT_T2.Size = new System.Drawing.Size(95, 13);
+            this.LBL_SET_HK_DECREMENT_T2.TabIndex = 15;
+            this.LBL_SET_HK_DECREMENT_T2.Text = "Decrement Team2";
+            // 
+            // LBL_SET_HK_SWAPTEAMS
+            // 
+            this.LBL_SET_HK_SWAPTEAMS.AutoSize = true;
+            this.LBL_SET_HK_SWAPTEAMS.Location = new System.Drawing.Point(38, 38);
+            this.LBL_SET_HK_SWAPTEAMS.Name = "LBL_SET_HK_SWAPTEAMS";
+            this.LBL_SET_HK_SWAPTEAMS.Size = new System.Drawing.Size(69, 13);
+            this.LBL_SET_HK_SWAPTEAMS.TabIndex = 0;
+            this.LBL_SET_HK_SWAPTEAMS.Text = "Swap Teams";
+            // 
+            // BTN_SET_HK_DECREMENT_T1
+            // 
+            this.BTN_SET_HK_DECREMENT_T1.Location = new System.Drawing.Point(262, 148);
+            this.BTN_SET_HK_DECREMENT_T1.Name = "BTN_SET_HK_DECREMENT_T1";
+            this.BTN_SET_HK_DECREMENT_T1.Size = new System.Drawing.Size(43, 23);
+            this.BTN_SET_HK_DECREMENT_T1.TabIndex = 14;
+            this.BTN_SET_HK_DECREMENT_T1.Text = "SET";
+            this.BTN_SET_HK_DECREMENT_T1.UseVisualStyleBackColor = true;
+            this.BTN_SET_HK_DECREMENT_T1.Click += new System.EventHandler(this.SetHotkey);
+            // 
+            // INPUT_SET_HK_RESET
+            // 
+            this.INPUT_SET_HK_RESET.AutoSize = true;
+            this.INPUT_SET_HK_RESET.BackColor = System.Drawing.Color.Gainsboro;
+            this.INPUT_SET_HK_RESET.Location = new System.Drawing.Point(113, 93);
+            this.INPUT_SET_HK_RESET.MinimumSize = new System.Drawing.Size(140, 0);
+            this.INPUT_SET_HK_RESET.Name = "INPUT_SET_HK_RESET";
+            this.INPUT_SET_HK_RESET.Size = new System.Drawing.Size(140, 13);
+            this.INPUT_SET_HK_RESET.TabIndex = 19;
+            // 
+            // INPUT_SET_HK_DECREMENT_T1
+            // 
+            this.INPUT_SET_HK_DECREMENT_T1.AutoSize = true;
+            this.INPUT_SET_HK_DECREMENT_T1.BackColor = System.Drawing.Color.Gainsboro;
+            this.INPUT_SET_HK_DECREMENT_T1.Location = new System.Drawing.Point(113, 153);
+            this.INPUT_SET_HK_DECREMENT_T1.MinimumSize = new System.Drawing.Size(140, 0);
+            this.INPUT_SET_HK_DECREMENT_T1.Name = "INPUT_SET_HK_DECREMENT_T1";
+            this.INPUT_SET_HK_DECREMENT_T1.Size = new System.Drawing.Size(140, 13);
+            this.INPUT_SET_HK_DECREMENT_T1.TabIndex = 13;
+            // 
+            // INPUT_SET_HK_SWAPTEAMS
+            // 
+            this.INPUT_SET_HK_SWAPTEAMS.AutoSize = true;
+            this.INPUT_SET_HK_SWAPTEAMS.BackColor = System.Drawing.Color.Gainsboro;
+            this.INPUT_SET_HK_SWAPTEAMS.Location = new System.Drawing.Point(113, 38);
+            this.INPUT_SET_HK_SWAPTEAMS.MinimumSize = new System.Drawing.Size(140, 0);
+            this.INPUT_SET_HK_SWAPTEAMS.Name = "INPUT_SET_HK_SWAPTEAMS";
+            this.INPUT_SET_HK_SWAPTEAMS.Size = new System.Drawing.Size(140, 13);
+            this.INPUT_SET_HK_SWAPTEAMS.TabIndex = 1;
+            // 
+            // LBL_SET_HK_DECREMENT_T1
+            // 
+            this.LBL_SET_HK_DECREMENT_T1.AutoSize = true;
+            this.LBL_SET_HK_DECREMENT_T1.Location = new System.Drawing.Point(12, 153);
+            this.LBL_SET_HK_DECREMENT_T1.Name = "LBL_SET_HK_DECREMENT_T1";
+            this.LBL_SET_HK_DECREMENT_T1.Size = new System.Drawing.Size(95, 13);
+            this.LBL_SET_HK_DECREMENT_T1.TabIndex = 12;
+            this.LBL_SET_HK_DECREMENT_T1.Text = "Decrement Team1";
+            // 
+            // LBL_SET_HK_RESET
+            // 
+            this.LBL_SET_HK_RESET.AutoSize = true;
+            this.LBL_SET_HK_RESET.Location = new System.Drawing.Point(28, 93);
+            this.LBL_SET_HK_RESET.Name = "LBL_SET_HK_RESET";
+            this.LBL_SET_HK_RESET.Size = new System.Drawing.Size(79, 13);
+            this.LBL_SET_HK_RESET.TabIndex = 18;
+            this.LBL_SET_HK_RESET.Text = "Reset Matches";
+            // 
+            // BTN_SET_HK_INCREMENT_T2
+            // 
+            this.BTN_SET_HK_INCREMENT_T2.Location = new System.Drawing.Point(262, 177);
+            this.BTN_SET_HK_INCREMENT_T2.Name = "BTN_SET_HK_INCREMENT_T2";
+            this.BTN_SET_HK_INCREMENT_T2.Size = new System.Drawing.Size(43, 23);
+            this.BTN_SET_HK_INCREMENT_T2.TabIndex = 8;
+            this.BTN_SET_HK_INCREMENT_T2.Text = "SET";
+            this.BTN_SET_HK_INCREMENT_T2.UseVisualStyleBackColor = true;
+            this.BTN_SET_HK_INCREMENT_T2.Click += new System.EventHandler(this.SetHotkey);
+            // 
+            // BTN_SET_HK_SWAPTEAMS
+            // 
+            this.BTN_SET_HK_SWAPTEAMS.Location = new System.Drawing.Point(262, 33);
+            this.BTN_SET_HK_SWAPTEAMS.Name = "BTN_SET_HK_SWAPTEAMS";
+            this.BTN_SET_HK_SWAPTEAMS.Size = new System.Drawing.Size(43, 23);
+            this.BTN_SET_HK_SWAPTEAMS.TabIndex = 2;
+            this.BTN_SET_HK_SWAPTEAMS.Text = "SET";
+            this.BTN_SET_HK_SWAPTEAMS.UseVisualStyleBackColor = true;
+            this.BTN_SET_HK_SWAPTEAMS.Click += new System.EventHandler(this.SetHotkey);
+            // 
+            // INPUT_SET_HK_INCREMENT_T2
+            // 
+            this.INPUT_SET_HK_INCREMENT_T2.AutoSize = true;
+            this.INPUT_SET_HK_INCREMENT_T2.BackColor = System.Drawing.Color.Gainsboro;
+            this.INPUT_SET_HK_INCREMENT_T2.Location = new System.Drawing.Point(113, 182);
+            this.INPUT_SET_HK_INCREMENT_T2.MinimumSize = new System.Drawing.Size(140, 0);
+            this.INPUT_SET_HK_INCREMENT_T2.Name = "INPUT_SET_HK_INCREMENT_T2";
+            this.INPUT_SET_HK_INCREMENT_T2.Size = new System.Drawing.Size(140, 13);
+            this.INPUT_SET_HK_INCREMENT_T2.TabIndex = 7;
+            // 
+            // INPUT_SET_HK_UPDATE
+            // 
+            this.INPUT_SET_HK_UPDATE.AutoSize = true;
+            this.INPUT_SET_HK_UPDATE.BackColor = System.Drawing.Color.Gainsboro;
+            this.INPUT_SET_HK_UPDATE.Location = new System.Drawing.Point(113, 64);
+            this.INPUT_SET_HK_UPDATE.MinimumSize = new System.Drawing.Size(140, 0);
+            this.INPUT_SET_HK_UPDATE.Name = "INPUT_SET_HK_UPDATE";
+            this.INPUT_SET_HK_UPDATE.Size = new System.Drawing.Size(140, 13);
+            this.INPUT_SET_HK_UPDATE.TabIndex = 10;
+            this.INPUT_SET_HK_UPDATE.Click += new System.EventHandler(this.INPUT_SET_HK_UPDATE_Click);
+            // 
+            // LBL_SET_HK_INCREMENT_T2
+            // 
+            this.LBL_SET_HK_INCREMENT_T2.AutoSize = true;
+            this.LBL_SET_HK_INCREMENT_T2.Location = new System.Drawing.Point(17, 182);
+            this.LBL_SET_HK_INCREMENT_T2.Name = "LBL_SET_HK_INCREMENT_T2";
+            this.LBL_SET_HK_INCREMENT_T2.Size = new System.Drawing.Size(90, 13);
+            this.LBL_SET_HK_INCREMENT_T2.TabIndex = 6;
+            this.LBL_SET_HK_INCREMENT_T2.Text = "Increment Team2";
+            // 
+            // BTN_SET_HK_UPDATE
+            // 
+            this.BTN_SET_HK_UPDATE.Location = new System.Drawing.Point(262, 59);
+            this.BTN_SET_HK_UPDATE.Name = "BTN_SET_HK_UPDATE";
+            this.BTN_SET_HK_UPDATE.Size = new System.Drawing.Size(43, 23);
+            this.BTN_SET_HK_UPDATE.TabIndex = 11;
+            this.BTN_SET_HK_UPDATE.Text = "SET";
+            this.BTN_SET_HK_UPDATE.UseVisualStyleBackColor = true;
+            this.BTN_SET_HK_UPDATE.Click += new System.EventHandler(this.SetHotkey);
+            // 
+            // BTN_SET_HK_INCREMENT_T1
+            // 
+            this.BTN_SET_HK_INCREMENT_T1.Location = new System.Drawing.Point(262, 119);
+            this.BTN_SET_HK_INCREMENT_T1.Name = "BTN_SET_HK_INCREMENT_T1";
+            this.BTN_SET_HK_INCREMENT_T1.Size = new System.Drawing.Size(43, 23);
+            this.BTN_SET_HK_INCREMENT_T1.TabIndex = 5;
+            this.BTN_SET_HK_INCREMENT_T1.Text = "SET";
+            this.BTN_SET_HK_INCREMENT_T1.UseVisualStyleBackColor = true;
+            this.BTN_SET_HK_INCREMENT_T1.Click += new System.EventHandler(this.SetHotkey);
+            // 
+            // LBL_SET_HK_INCREMENT_T1
+            // 
+            this.LBL_SET_HK_INCREMENT_T1.AutoSize = true;
+            this.LBL_SET_HK_INCREMENT_T1.Location = new System.Drawing.Point(17, 125);
+            this.LBL_SET_HK_INCREMENT_T1.Name = "LBL_SET_HK_INCREMENT_T1";
+            this.LBL_SET_HK_INCREMENT_T1.Size = new System.Drawing.Size(90, 13);
+            this.LBL_SET_HK_INCREMENT_T1.TabIndex = 3;
+            this.LBL_SET_HK_INCREMENT_T1.Text = "Increment Team1";
+            // 
+            // INPUT_SET_HK_INCREMENT_T1
+            // 
+            this.INPUT_SET_HK_INCREMENT_T1.AutoSize = true;
+            this.INPUT_SET_HK_INCREMENT_T1.BackColor = System.Drawing.Color.Gainsboro;
+            this.INPUT_SET_HK_INCREMENT_T1.Location = new System.Drawing.Point(113, 124);
+            this.INPUT_SET_HK_INCREMENT_T1.MinimumSize = new System.Drawing.Size(140, 0);
+            this.INPUT_SET_HK_INCREMENT_T1.Name = "INPUT_SET_HK_INCREMENT_T1";
+            this.INPUT_SET_HK_INCREMENT_T1.Size = new System.Drawing.Size(140, 13);
+            this.INPUT_SET_HK_INCREMENT_T1.TabIndex = 4;
+            // 
             // colorThemeDialog
             // 
             this.colorThemeDialog.Color = System.Drawing.Color.Transparent;
@@ -7771,6 +8227,20 @@ namespace OW_Scoreboard_Tool
             this.imageButtonContextMenu.ResumeLayout(false);
             this.Match_1.ResumeLayout(false);
             this.Match_1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.m1t2Logo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m1t1Logo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m1t2p6HeroIcon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m1t2p5HeroIcon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m1t2p4HeroIcon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m1t2p3HeroIcon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m1t2p2HeroIcon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m1t2p1HeroIcon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m1t1p6HeroIcon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m1t1p5HeroIcon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m1t1p4HeroIcon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m1t1p3HeroIcon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m1t1p2HeroIcon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m1t1p1HeroIcon)).EndInit();
             this.m1Map.ResumeLayout(false);
             this.m1Map.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m1m7t2Score)).EndInit();
@@ -7926,6 +8396,9 @@ namespace OW_Scoreboard_Tool
             ((System.ComponentModel.ISupportInitialize)(this.bracketR1M2Score1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bracketR1M1Score2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bracketR1M1Score1)).EndInit();
+            this.tabpage2.ResumeLayout(false);
+            this.MatchHotkeyGroup.ResumeLayout(false);
+            this.MatchHotkeyGroup.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -8540,6 +9013,43 @@ namespace OW_Scoreboard_Tool
         private System.Windows.Forms.ToolStripMenuItem defaultRolesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem defaultAllToolStripMenuItem;
         private System.Windows.Forms.Button playerTeamLogoButton;
+        private System.Windows.Forms.PictureBox m1t1p1HeroIcon;
+        private System.Windows.Forms.PictureBox m1t1p6HeroIcon;
+        private System.Windows.Forms.PictureBox m1t1p5HeroIcon;
+        private System.Windows.Forms.PictureBox m1t1p4HeroIcon;
+        private System.Windows.Forms.PictureBox m1t1p3HeroIcon;
+        private System.Windows.Forms.PictureBox m1t1p2HeroIcon;
+        private System.Windows.Forms.PictureBox m1t2p6HeroIcon;
+        private System.Windows.Forms.PictureBox m1t2p5HeroIcon;
+        private System.Windows.Forms.PictureBox m1t2p4HeroIcon;
+        private System.Windows.Forms.PictureBox m1t2p3HeroIcon;
+        private System.Windows.Forms.PictureBox m1t2p2HeroIcon;
+        private System.Windows.Forms.PictureBox m1t2p1HeroIcon;
+        private System.Windows.Forms.PictureBox m1t2Logo;
+        private System.Windows.Forms.PictureBox m1t1Logo;
+        private System.Windows.Forms.TabPage tabpage2;
+        private System.Windows.Forms.Button BTN_SET_HK_SWAPTEAMS;
+        private System.Windows.Forms.Label INPUT_SET_HK_SWAPTEAMS;
+        private System.Windows.Forms.Label LBL_SET_HK_SWAPTEAMS;
+        private System.Windows.Forms.Button BTN_SET_HK_INCREMENT_T1;
+        private System.Windows.Forms.Label INPUT_SET_HK_INCREMENT_T1;
+        private System.Windows.Forms.Label LBL_SET_HK_INCREMENT_T1;
+        private System.Windows.Forms.Button BTN_SET_HK_UPDATE;
+        private System.Windows.Forms.Label INPUT_SET_HK_UPDATE;
+        private System.Windows.Forms.Label LBL_SET_HK_UPDATE;
+        private System.Windows.Forms.Button BTN_SET_HK_INCREMENT_T2;
+        private System.Windows.Forms.Label INPUT_SET_HK_INCREMENT_T2;
+        private System.Windows.Forms.Label LBL_SET_HK_INCREMENT_T2;
+        private System.Windows.Forms.Button BTN_SET_HK_DECREMENT_T2;
+        private System.Windows.Forms.Label INPUT_SET_HK_DECREMENT_T2;
+        private System.Windows.Forms.Label LBL_SET_HK_DECREMENT_T2;
+        private System.Windows.Forms.Button BTN_SET_HK_DECREMENT_T1;
+        private System.Windows.Forms.Label INPUT_SET_HK_DECREMENT_T1;
+        private System.Windows.Forms.Label LBL_SET_HK_DECREMENT_T1;
+        private System.Windows.Forms.Button BTN_SET_HK_RESET;
+        private System.Windows.Forms.Label INPUT_SET_HK_RESET;
+        private System.Windows.Forms.Label LBL_SET_HK_RESET;
+        private System.Windows.Forms.GroupBox MatchHotkeyGroup;
     }
 }
 #endregion
